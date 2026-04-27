@@ -25,4 +25,17 @@ class number_processor:
     def write_file(self, filename, data):
         with open(filename, 'w') as file:
             file.write(" ".join(map(str, data)))
-    
+
+    def run(self):
+        numbers = self.read_numbers()
+        if numbers:
+            even, odd = self.separate_numbers(numbers)
+            self.write_file("even.txt", even)
+            self.write_file("odd.txt", odd)
+
+            print("Even and Odd numbers successfully written.")
+            print(f"Processed {len(numbers)} numbers.")
+
+if __name__ == "__main__":
+    app = number_processor("numbers.txt")
+    app.run()
