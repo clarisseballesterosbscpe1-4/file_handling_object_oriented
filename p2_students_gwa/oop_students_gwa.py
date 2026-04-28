@@ -12,3 +12,8 @@ class students_gwa:
         except FileNotFoundError:
             print("File not found")
         return students
+
+    def find_student(self, students):
+        if not students:
+            return None
+        return min(students, key=lambda x: x[1])
