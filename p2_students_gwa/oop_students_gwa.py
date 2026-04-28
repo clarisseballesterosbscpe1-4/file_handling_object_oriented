@@ -36,8 +36,8 @@ class students_gwa:
 
         if top:
             print("Top Students:")
-            for s in top:
-                print(s[0], "with GWA", s[1])
+            for student in top:
+                print(student[0], "with GWA", student[1])
         else:
             print("No top student")
 
