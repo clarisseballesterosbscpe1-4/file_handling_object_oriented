@@ -16,4 +16,4 @@ class students_gwa:
     def find_student(self, students):
         if not students:
             return None
-        return min(students, key=lambda x: x[1])
+        return min(students, key=lambda students: students[1])
