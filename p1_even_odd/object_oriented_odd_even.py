@@ -1,4 +1,4 @@
-class number_processor:
+class NumberProcessor:
     def __init__(self, input_file):
         self.input_file = input_file
 
@@ -37,5 +37,5 @@ class number_processor:
             print(f"Processed {len(numbers)} numbers.")
 
 if __name__ == "__main__":
-    app = number_processor("numbers.txt")
+    app = NumberProcessor("numbers.txt")
     app.run()

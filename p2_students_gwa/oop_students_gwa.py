@@ -1,4 +1,4 @@
-class students_gwa:
+class StudentsGwa:
     def __init__(self, students):
         self.students = students
 
@@ -42,5 +42,5 @@ class students_gwa:
             print("No top student")
 
 if __name__ == "__main__":
-    app = students_gwa("students.txt")
+    app = StudentsGwa("students.txt")
     app.run()

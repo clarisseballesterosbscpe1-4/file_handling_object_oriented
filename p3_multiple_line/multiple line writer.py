@@ -1,4 +1,4 @@
-class life_writer:
+class LifeWriter:
     def __init__(self, my_life):
         self.my_life = my_life
 
@@ -17,5 +17,5 @@ class life_writer:
             file.close()
             print("File saved.")
 
-app = life_writer("my_life.txt")
+app = LifeWriter("my_life.txt")
 app.write_lines()
