@@ -5,7 +5,7 @@ class NumberProcessor:
     def read_integers(self):
         try:
             with open("integers.txt", "r") as integers_file:
-                content = integers.read().split()
+                content = integers_file.read().split()
 
                 numbers = []
                 for item in content:
